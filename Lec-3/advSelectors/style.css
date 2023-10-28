@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container p span{
+    color: red;
+}
+
+/* ul>li{
+    color: red;
+} */
+
+
+/* li+li{
+    color: red;
+} */
+
+/* li~li{
+    color: red;
+} */
+
+/* ------------ pseudo classes */
+/* a:hover{
+    color: aqua;
+} */
+
+/* a:link{
+    color: chocolate;
+} */
+
+/* a:visited{
+    color:red;
+} */
+
+/* a:active{
+    color: green;
+} */
+
+/* --------------- nav */
+
+nav{
+    background-color: black;
+    padding: 5px;
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    margin: 10px;
+}
+
+a:hover{
+    border-bottom: 2px solid white;
+}
+
+a:visited{
+    color: white;
+}
+
+a:active{
+    color: aqua;
+}
+
+/* ---------------------- */
+/* 
+.fruits li:first-child{
+    color: red;
+}
+
+.fruits li:last-child{
+    color: green;
+} */
+
+.fruits li:nth-child(2n){
+    background-color: grey;
+}
+
+.fruits li:nth-child(2n+1){
+    background-color: lightgray;
+}
+
+input:focus{
+    background-color: yellow;
+    font-size: 2rem;
+}
+
+/* -------------------------- */
+.fruits li::before{
+    content: '🤡';
+}
+
+.fruits li::after{
+    content: '📞⚙';
+}
+
+div p::first-letter{
+    font-size: 40px;
+}
+
+div p::first-line{
+    color: aqua;
+}

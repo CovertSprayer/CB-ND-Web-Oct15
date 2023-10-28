@@ -1,0 +1,37 @@
+*{
+    color: red;
+    /* margin: 0;
+    padding: 0; */
+}
+
+/* ------------ element selector */
+
+/* p{
+    color: red;
+}
+
+h1{
+    color: green;
+} */
+
+/* ---------- id selector */
+/* #para{
+    color: red;
+} */
+
+/* ----------- class selector */
+
+/* .fav-movie{
+    color: aqua;
+} */
+
+/* ------------ attribute selector */
+
+/* a[href="https://www.facebook.com"]{
+    color: brown;
+} */
+
+/* li[class="fav-movie"]{
+    font-size: 3rem;
+} */
+
