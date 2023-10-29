@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&family=Roboto:wght@100;300;400;500&display=swap');
+
+div{
+    /* color: aquamarine; */
+    background-color: #650D1B;
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    /* font-family: 'comic sans MS'; */
+    font-family: 'Poppins', sans-serif;
+    line-height: 50px;
+    text-align: justify;
+    text-decoration: none;
+}

@@ -1,0 +1,42 @@
+.child{
+    background-color: aquamarine;
+    height: 70px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.container{
+    /* margin: 40px; */
+    background-color: orange;
+    height: 500px;
+    /* position: relative; */
+}
+.child{
+    position: relative;
+    z-index: 5;
+}
+
+.child-3{
+    background-color: lightcyan;
+    position: absolute;
+    z-index: 4;
+    /* position: absolute;  */
+    /* width: 100%; */
+    /* top: 0px;
+    left: 80px; */
+}
+
+.child-5{
+    background-color: teal;
+    position: relative;
+    /* z-index: -2; */
+}
+
+.child-4{
+    /* position: fixed;
+    width: 250px;
+    height: 300px;
+    right: 0;
+    bottom: 0; */
+    /* z-index: ; */
+}
