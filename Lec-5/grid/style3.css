@@ -1,0 +1,17 @@
+.container{
+    border: 2px solid black;
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+.el{
+    background-color: yellow;
+    border: 2px solid black;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
