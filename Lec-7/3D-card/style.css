@@ -1,0 +1,36 @@
+body{
+    perspective: 800px;
+}
+
+.container{
+    height: 400px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 100px auto;
+    position: relative;
+    transition-duration: 1.3s;
+    transform-style: preserve-3d;
+}
+
+.side-a, .side-b{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; 
+}
+
+.side-a{
+    background: url('https://c8.alamy.com/comp/2BBE8DF/bollywood-superstar-akshay-kumar-2BBE8DF.jpg');
+    background-size: cover;
+    
+}
+
+.side-b{
+    font-size: 1.3rem;
+    background-color: beige;
+    transform: rotateY(180deg);
+}
+
+.container:hover{
+    transform: rotateY(180deg);
+}

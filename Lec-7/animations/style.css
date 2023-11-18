@@ -1,0 +1,41 @@
+.container{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: cadetblue;
+    animation-duration: 2s;
+    /* animation-name: moveToRight; */
+    /* animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-delay: 4s;
+    animation-timing-function: ease-in;*/
+    margin: 200px auto; 
+    animation: moveUpDown 4s ease-in-out  infinite alternate;
+}
+
+@keyframes moveToRight{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: cornflowerblue;
+        transform: translateX(200px);
+        border-radius: 50%;
+    }
+}
+
+@keyframes moveUpDown{
+    0%{
+
+    }
+
+    50%{
+        transform: translateY(-100px);
+        background-color: white;
+    }
+
+    100%{
+        background-color: brown;
+    }
+}
