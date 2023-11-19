@@ -1,0 +1,22 @@
+.main-div{
+    /* border: 2px solid black; */
+    height: 300px;
+    width: 500px;
+    background-color: aqua;
+}
+
+.ms-auto{
+    margin-left: auto;
+}
+
+.main{
+    height: 500px;
+}
+
+.row{
+    border: 2px solid white;
+}
+
+.column{
+    border: 2px solid red;
+}
