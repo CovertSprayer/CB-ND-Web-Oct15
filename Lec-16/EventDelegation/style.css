@@ -1,0 +1,17 @@
+div{
+    border: 2px solid black;
+}
+
+.container{
+    min-height: 50vh;
+    background-color: orange;
+    display: flex;
+    gap: 10px;
+}
+
+.el{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    font-size: 2rem;
+}

@@ -1,0 +1,19 @@
+
+div{
+    border: 2px solid black;
+    padding: 50px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.grand-parent{
+    background-color: aquamarine;
+}
+
+.parent{
+    background-color: orange;
+}
+
+.child{
+    background-color: cornflowerblue;
+}
