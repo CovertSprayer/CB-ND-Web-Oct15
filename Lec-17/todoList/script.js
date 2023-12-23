@@ -11,11 +11,11 @@ form.addEventListener('submit', (e)=>{
 
 function addTextToList(text){
     if(text == '') return;
-    
+
     const todo = document.createElement('div');
     todo.classList.add('todo');
     todo.innerHTML = `<div class="left">
-                            <input type="checkbox">
+                            <input class="check" type="checkbox">
                             <p>${text}</p>
                         </div>
                         <div class="right">
@@ -26,3 +26,40 @@ function addTextToList(text){
     todoList.append(todo);
     console.log(todo);
 }
+
+todoList.addEventListener('click', (e)=>{
+    const className = e.target.getAttribute('class');
+
+    if(className === 'trash-bin'){
+        e.target.parentElement.parentElement.remove();
+    }
+
+    else if(className === 'up-arrow'){
+        try {
+            const currTodo = e.target.parentElement.parentElement;
+            const prevTodo = currTodo.previousElementSibling;
+            prevTodo.before(currTodo);
+        } 
+        catch (error) {
+            console.log('Cant move further!!');
+        }
+    }
+
+    else if(className === 'down-arrow'){
+        const currTodo = e.target.parentElement.parentElement;
+        const nextTodo = currTodo.nextElementSibling;
+        nextTodo.after(currTodo);
+    }
+
+    else{
+        if(e.target.classList.contains('todo')){
+            e.target.children[0].children[1].classList.toggle('line-th-eff');
+            e.target.children[0].children[0].setAttribute('checked', true);
+        }
+        else if(e.target.classList.contains('left'))
+            e.target.children[1].classList.toggle('line-th-eff');
+
+        else
+            e.target.classList.toggle('line-th-eff');
+    }
+})

@@ -32,6 +32,7 @@ form button{
 .left{
     display: flex;
     gap: 6px;
+    /* border: 2px solid red; */
 }
 
 .todo{
@@ -44,4 +45,22 @@ form button{
     max-width: 400px;
     margin: 5px auto;
     padding: 0 10px;
+}
+
+.right span{
+    cursor: pointer;
+}
+
+.line-th-eff{
+    text-decoration: line-through;
+}
+
+.todo-list .todo:first-child .up-arrow{
+    /* display: none; */
+    visibility: hidden;
+}
+
+.todo-list .todo:last-child .down-arrow{
+    /* display: none; */
+    visibility: hidden;
 }
