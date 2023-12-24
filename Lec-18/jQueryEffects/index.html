@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+            border: 2px solid black;
+            font-size: 2rem;
+            display: grid;
+            place-content: center;
+            cursor: pointer;
+        }
+
+        .parent{
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery Effects</h1>
+    <button id="hide">Hide All</button>
+    <button id="show">Show All</button>
+    <button id="toggle">Toggle</button>
+
+    <div class="parent">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
