@@ -36,10 +36,12 @@ const rightArrow = document.querySelector('#right-arrow');
 leftArrow.addEventListener('click', (e)=>{
     // console.log(window.scrollX)
     // list.scrollIntoView({})
-    
+    list.scrollBy({right:210, behavior:"smooth"});
+
 })
 
 rightArrow.addEventListener('click', (e)=>{
-    list.scrollIntoView({left:'220px'})
+    // list.scrollIntoView({left:0, behavior:"smooth"})
+    list.scrollBy({left:210, behavior:"smooth"});
 })
 
