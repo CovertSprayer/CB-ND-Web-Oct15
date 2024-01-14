@@ -1,36 +1,38 @@
+const uuid = require('uuid');
+
 movieData = [
     {
-        id:1,
+        id:uuid.v4(),
         title:"Avengers",
         rating:7
     },
     {
-        id:2,
+        id:uuid.v4(),
         title:"Spiderman",
         rating:5
     },
     {
-        id:3,
+        id:uuid.v4(),
         title:"Superman",
         rating:8
     },
     {
-        id:4,
+        id:uuid.v4(),
         title:"Aquaman",
         rating:3
     },
     {
-        id:5,
+        id:uuid.v4(),
         title:"Dark Knight",
         rating:6
     },
     {
-        id:6,
+        id:uuid.v4(),
         title:"3 Idiots",
         rating:7.5
     },
     {
-        id:7,
+        id:uuid.v4(),
         title:"Talk to me",
         rating:9
     },
