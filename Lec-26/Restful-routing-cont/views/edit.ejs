@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/blogs/<%= blog.id %>?_method=PUT" method="post">
+        Title: <input value="<%= blog.title %>" name="title" type="text" placeholder="Enter title"> <br>
+        User: <input value="<%= blog.author %>" name="author" type="text" placeholder="Enter User name"> <br>
+        Description: 
+        <br><textarea name="desc" cols="30" rows="5"><%= blog.desc %></textarea> <br>
+        <button>Save</button>
+    </form>
+</body>
+</html>

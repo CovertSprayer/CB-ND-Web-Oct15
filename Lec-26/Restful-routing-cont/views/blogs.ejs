@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 80vw; margin: 0 auto;">
+        <a href="/blogs/new">Create new Blog</a>
+        <% for( let blog of blogs ) { %>
+            <div style="border: 2px solid black; padding: 1rem; margin-bottom: 10px;">
+                <h2><%= blog.title %></h2>
+                <p><%= blog.author %></p>
+                <p><%= blog.views %></p>
+                <a href="/blogs/<%= blog.id %>">Show</a>
+                <form action="/blogs/<%= blog.id %>?_method=DELETE" method="post">
+                    <button>delete</button>
+                </form>
+                <a href="/blogs/<%= blog.id %>/edit">edit</a>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>
