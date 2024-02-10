@@ -1,0 +1,15 @@
+<% layout('/boilerplate/boilerplate.ejs') -%>
+
+    <div class="container d-flex flex-wrap gap-4 mt-4 justify-content-center">
+        <% products.forEach(product => { %>
+            <div class="card" style="width: 18rem; height: 26rem;">
+                <img src="<%= product.img %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= product.name %></h5>
+                  <h5 class="card-text">₹ <%= product.price %></h5>
+                  <p class="card-text"><%= product.desc.substring(0, 70) %>...</p>
+                  <a href="/products/<%= product._id %>" class="btn btn-sm btn-primary">Show</a>
+                </div>
+              </div>
+        <% }) %>
+    </div>
