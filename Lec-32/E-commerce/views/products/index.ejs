@@ -1,0 +1,17 @@
+<% layout('/boilerplate/boilerplate.ejs') -%>
+
+<%- include('../partials/flash.ejs') %>
+  
+    <div class="container d-flex flex-wrap justify-content-center">
+        <% products.forEach(product => { %>
+            <div class="card mx-2 mb-3" style="width: 18rem;">
+                <img src="<%= product.img %>" height="200px" class="card-img-top object-fit-cover" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= product.name %></h5>
+                  <h5 class="card-text">₹ <%= product.price %></h5>
+                  <p class="card-text"><%= product.desc.substring(0, 70) %>...</p>
+                  <a href="/products/<%= product._id %>" class="btn btn-sm btn-primary">Show</a>
+                </div>
+              </div>
+        <% }) %>
+    </div>
