@@ -29,6 +29,14 @@ function isValid(req, res, next){
     next();
 }
 
+function self(req, res, next){
+    if(req.session.user){
+        return res.redirect('back')
+    }
+
+    next();
+}
+
 app.get('/', isValid, (req, res) => {
     res.render('home', {user: req.session.user});
 })
@@ -37,11 +45,11 @@ app.get('/register', (req, res) => {
     res.render('register');
 })
 
-app.get('/login', (req, res) => {
+app.get('/login', self, (req, res) => {
     res.render('login');
 })
 
-app.post('/register', async (req, res) => {
+app.post('/register', self, async (req, res) => {
     const { username, password } = req.body;
     console.log(username, password)
 
